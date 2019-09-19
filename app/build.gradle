@@ -48,7 +48,7 @@ android {
         hodl {
             applicationId "org.groestlcoin.hodlwallet"
             dimension "mode"
-            resValue "string", "app_name", "GRS HODL"
+            resValue "string", "app_name", "HODL GRS"
             buildConfigField "boolean", "BITCOIN_TESTNET", "false"
 
             externalNativeBuild {
@@ -65,7 +65,7 @@ android {
         hodlTestnet {
             applicationId "org.groestlcoin.hodlwallet.testnet"
             dimension "mode"
-            resValue "string", "app_name", "GRS HODL-testnet"
+            resValue "string", "app_name", "HODL GRS-testnet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "true"
 
             externalNativeBuild {
