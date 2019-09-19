@@ -118,8 +118,8 @@ public class BRConstants {
     public static final int CURRENT_UNIT_SATOSHI = 0;
     public static final int CURRENT_UNIT_BITCOINS = 1;
 
-    public static final String bitcoinLowercase = "SAT";
-    public static final String bitcoinUppercase = "\u0243";
+    public static final String bitcoinLowercase = "GRO";
+    public static final String bitcoinUppercase = "\u01e4";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
