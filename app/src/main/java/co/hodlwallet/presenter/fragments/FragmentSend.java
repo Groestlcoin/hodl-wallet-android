@@ -287,8 +287,9 @@ public class FragmentSend extends Fragment {
                     // Here's an easier way to know if the content was pasted.
                     // Check if what changed is the content of the clipboard, we can assume that's a paste.
                     String clipboardContent = BRClipboardManager.getClipboard(getActivity());
+                    clipboardContent = clipboardContent.trim();
                     if (clipboardContent.equals(s.toString())) {
-                        if (s.toString().startsWith("bitcoin:")) {
+                        if (s.toString().startsWith("groestlcoin:")) {
                             Log.d(TAG, "afterTextChanged: Processing clipboard content: " + s.toString());
 
                             RequestObject obj = getRequestFromString(s.toString());
@@ -373,7 +374,7 @@ public class FragmentSend extends Fragment {
                                 // Address is valid.. we get out.
                                 return;
                             }
-                        } else { // error, it's not "bitcoin:" or a valid address
+                        } else { // error, it's not "groestlcoin:" or a valid address
                             showClipboardError();
 
                             return;

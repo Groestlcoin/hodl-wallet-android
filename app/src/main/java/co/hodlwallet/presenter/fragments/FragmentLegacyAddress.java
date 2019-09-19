@@ -266,7 +266,7 @@ public class FragmentLegacyAddress extends Fragment {
                         // TODO fix this, use legacy instead of normal address
                         legacyAddress = BRSharedPrefs.getLegacyAddress(ctx);
                         mAddress.setText(legacyAddress);
-                        boolean generated = QRUtils.generateQR(ctx, "bitcoin:" + legacyAddress, mQrImage);
+                        boolean generated = QRUtils.generateQR(ctx, "groestlcoin:" + legacyAddress, mQrImage);
                         if (!generated)
                             throw new RuntimeException("failed to generate qr image for address");
                     }
