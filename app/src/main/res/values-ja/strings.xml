@@ -88,7 +88,7 @@
   <string name="BCH.txHashHeader">BCHのトランザクションID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">承認する</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+  <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
   <string name="BitID.authenticationRequest">%1$sがビットコインウォレットを使っての認証を求めています</string>
   <!-- Deny button label -->
   <string name="BitID.deny">拒否する</string>
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">ウォレットの名前</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">ウォレットを管理</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy Groestlcoin title -->
   <string name="MenuButton.buy">ビットコインを購入</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">ウォレットにロックを設定する</string>
@@ -368,7 +368,7 @@
   <string name="RecoverWallet.subheader_reset_pin">PINコードをリセットするには、紙の鍵の中からこのフレーズを下記ボックスの中に入力してください。</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">初めに数量を入力してください。</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of Groestlcoin -->
   <string name="RequestAnAmount.title">金額のリクエスト</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">同期</string>
@@ -392,7 +392,7 @@
   <string name="ReScan.subheader1">予定時刻</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">いつ同期しますか?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan Groestlcoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">カメラのフラッシュ</string>
   <!-- Complete filter label -->
   <string name="Search.complete">完了</string>

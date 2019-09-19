@@ -88,8 +88,8 @@
   <string name="BCH.txHashHeader">BCH transaktions-ID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">Godkänn</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
-  <string name="BitID.authenticationRequest">%1$s begär autentisering med hjälp av din bitcoin-plånbok</string>
+  <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
+  <string name="BitID.authenticationRequest">%1$s begär autentisering med hjälp av din Groestlcoin-plånbok</string>
   <!-- Deny button label -->
   <string name="BitID.deny">Avslå</string>
   <!-- BitID error alert title -->
@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Ignorera</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till HODLs nyckeldata och stjäla dina bitcoin! Töm denna plånbok direkt och återupprätta den på en säker enhet.</string>
+  <string name="JailbreakWarnings.messageWithBalance">ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till HODLs nyckeldata och stjäla dina Groestlcoin! Töm denna plånbok direkt och återupprätta den på en säker enhet.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till HODLs nyckeldata och stjäla dina bitcoin! Använd HODL endast på en säker enhet.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till HODLs nyckeldata och stjäla dina Groestlcoin! Använd HODL endast på en säker enhet.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">VARNING</string>
   <!-- Wipe wallet button -->
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">Plånbokens namn</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Hantera plånbok</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy Groestlcoin title -->
   <string name="MenuButton.buy">Köp Groestlcoin</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Lås plånbok</string>
@@ -368,7 +368,7 @@
   <string name="RecoverWallet.subheader_reset_pin">För att återställa din PIN-kod anger du orden från din ordnyckel i boxarna nedan.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">Var god ange ett belopp först.</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of Groestlcoin -->
   <string name="RequestAnAmount.title">Begär ett belopp</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">Synka</string>
@@ -379,7 +379,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 minuter</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">Om en transaktion visar sig som klar i bitcoins nätverk men inte i HODL.</string>
+  <string name="ReScan.body2">Om en transaktion visar sig som klar i Groestlcoins nätverk men inte i HODL.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">Du får gång på gång ett meddelande som säger att din transaktion avvisades.</string>
   <!-- Start Sync button label -->
@@ -392,7 +392,7 @@
   <string name="ReScan.subheader1">Uppskattad tid</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">När ska man synka?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan Groestlcoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">Kamerablixt</string>
   <!-- Complete filter label -->
   <string name="Search.complete">avsluta</string>
@@ -405,7 +405,7 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">Aktivera alla säkerhetsfunktioner för maximal säkerhet.</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">Det enda sättet att komma åt dina bitcoin om du förlorar eller uppgraderar din telefon.</string>
+  <string name="SecurityCenter.paperKeyDescription">Det enda sättet att komma åt dina Groestlcoin om du förlorar eller uppgraderar din telefon.</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Ordnyckel</string>
   <!-- PIN button description -->
@@ -445,9 +445,9 @@
   <!-- Payee identity not certified alert title. -->
   <string name="Send.identityNotCertified">Betalningsmottagaren är inte certifierad.</string>
   <!-- Invalid address alert message -->
-  <string name="Send.invalidAddressMessage">Mottagaradressen är inte en giltig bitcoin-adress.</string>
+  <string name="Send.invalidAddressMessage">Mottagaradressen är inte en giltig Groestlcoin-adress.</string>
   <!-- Invalid address on pasteboard message -->
-  <string name="Send.invalidAddressOnPasteboard">Urklipp innehåller inte en giltig bitcoinadress.</string>
+  <string name="Send.invalidAddressOnPasteboard">Urklipp innehåller inte en giltig Groestlcoinadress.</string>
   <!-- Invalid address alert title -->
   <string name="Send.invalidAddressTitle">Ogiltig adress</string>
   <!-- Is rescanning error message -->
@@ -529,7 +529,7 @@
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">Senast skrev du ner din ordnyckel på %1$s</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">Det säkraste och tryggaste sättet att använda bitcoin.</string>
+  <string name="StartViewController.message">Det säkraste och tryggaste sättet att använda Groestlcoin.</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">Ansluter</string>
   <!-- Syncing view header text -->
@@ -667,7 +667,7 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">Plånbok upplåst</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina bitcoin.</string>
+  <string name="UpdatePin.caption">Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina Groestlcoin.</string>
   <!-- PIN creation info. -->
   <string name="UpdatePin.createInstruction">Din PIN-kod används för att låsa upp ditt HODL och skicka pengar</string>
   <!-- Update PIN title -->

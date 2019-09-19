@@ -88,7 +88,7 @@
     <string name="BCH.txHashHeader">BCH-Transaktions-ID</string>
     <!-- Approve button label -->
     <string name="BitID.approve">Bestätigen</string>
-    <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+    <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
     <string name="BitID.authenticationRequest">%1$s fordert die Authentifizierung über Ihr Groestlcoin-Wallet an</string>
     <!-- Deny button label -->
     <string name="BitID.deny">Ablehnen</string>
@@ -234,7 +234,7 @@
     <string name="ManageWallet.textFeildLabel">Name des Wallets</string>
     <!-- Manage wallet modal title -->
     <string name="ManageWallet.title">Wallet verwalten</string>
-    <!-- Buy bitcoin title -->
+    <!-- Buy Groestlcoin title -->
     <string name="MenuButton.buy">Groestlcoin kaufen</string>
     <!-- Menu button title -->
     <string name="MenuButton.lock">Wallet sperren</string>
@@ -368,7 +368,7 @@
     <string name="RecoverWallet.subheader_reset_pin">Gib die Wörter des Offlineschlüssels in die Kästen unten ein, um deine PIN zurückzusetzen.</string>
     <!-- No amount entered error message. -->
     <string name="RequestAnAmount.noAmount">Bitte geben Sie zuerst einen Betrag ein.</string>
-    <!-- Request a specific amount of bitcoin -->
+    <!-- Request a specific amount of Groestlcoin -->
     <string name="RequestAnAmount.title">Einen Betrag anfordern</string>
     <!-- Alert action button label -->
     <string name="ReScan.alertAction">Synchronisieren</string>
@@ -392,7 +392,7 @@
     <string name="ReScan.subheader1">Voraussichtliche Dauer</string>
     <!-- Subheader label -->
     <string name="ReScan.subheader2">Wann soll synchronisiert werden?</string>
-    <!-- Scan bitcoin address camera flash toggle -->
+    <!-- Scan Groestlcoin address camera flash toggle -->
     <string name="Scanner.flashButtonLabel">Kamerablitz</string>
     <!-- Complete filter label -->
     <string name="Search.complete">abgeschlossen</string>

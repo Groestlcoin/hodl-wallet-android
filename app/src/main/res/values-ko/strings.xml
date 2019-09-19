@@ -88,7 +88,7 @@
   <string name="BCH.txHashHeader">BCH Transaction ID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">승인</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+  <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
   <string name="BitID.authenticationRequest">%1$s(이)가 귀하의 비트코인 월렛 이용에 대한 인증을 요청하고 있습니다.</string>
   <!-- Deny button label -->
   <string name="BitID.deny">거부</string>
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">지갑 이름</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">지갑 관리</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy Groestlcoin title -->
   <string name="MenuButton.buy">비트코인 구매</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">지갑 잠그기</string>
@@ -368,7 +368,7 @@
   <string name="RecoverWallet.subheader_reset_pin">PIN을 재설정하려면, 페이퍼 키의 단어들을 아래 상자에 입력해 주세요.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">먼저 금액을 입력해 주세요.</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of Groestlcoin -->
   <string name="RequestAnAmount.title">금액 요청</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">동기화</string>
@@ -392,7 +392,7 @@
   <string name="ReScan.subheader1">예상 시간</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">동기화는 언제 해야 합니까?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan Groestlcoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">카메라 플래시</string>
   <!-- Complete filter label -->
   <string name="Search.complete">완료</string>

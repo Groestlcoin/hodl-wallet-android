@@ -88,7 +88,7 @@
   <string name="BCH.txHashHeader">BCH 交易 ID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">批准</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+  <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
   <string name="BitID.authenticationRequest">%1$s 正使用您的比特币钱包请求验证</string>
   <!-- Deny button label -->
   <string name="BitID.deny">拒绝</string>
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">钱包名称</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">管理钱包</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy Groestlcoin title -->
   <string name="MenuButton.buy">购买比特币</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">锁住钱包</string>
@@ -368,7 +368,7 @@
   <string name="RecoverWallet.subheader_reset_pin">要重置 PIN 码，请在下面的框中输入纸上密钥中的单词。</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">请先输入金额。</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of Groestlcoin -->
   <string name="RequestAnAmount.title">申请金额</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">同步</string>
@@ -392,7 +392,7 @@
   <string name="ReScan.subheader1">估计时间</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">何时同步？</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan Groestlcoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">相机闪光灯</string>
   <!-- Complete filter label -->
   <string name="Search.complete">完成</string>

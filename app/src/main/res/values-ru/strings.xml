@@ -88,7 +88,7 @@
   <string name="BCH.txHashHeader">Идентификатор транзакции BCH</string>
   <!-- Approve button label -->
   <string name="BitID.approve">Одобрить</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+  <!-- <sitename> is requesting authentication using your Groestlcoin wallet -->
   <string name="BitID.authenticationRequest">%1$s запрашивает аутентификацию, используя ваш биткойн-кошелек</string>
   <!-- Deny button label -->
   <string name="BitID.deny">Отказаться</string>
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">Название кошелька</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Управление кошельком</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy Groestlcoin title -->
   <string name="MenuButton.buy">Купить Groestlcoin</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Заблокировать кошелек</string>
@@ -368,7 +368,7 @@
   <string name="RecoverWallet.subheader_reset_pin">Для сброса PIN-кода введите слова из вашего бумажного ключа в расположенные ниже поля.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">Сначала введите сумму.</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of Groestlcoin -->
   <string name="RequestAnAmount.title">Запросить сумму</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">Синхронизация</string>
@@ -392,7 +392,7 @@
   <string name="ReScan.subheader1">Примерное время</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">Когда синхронизировать?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan Groestlcoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">Вспышка камеры</string>
   <!-- Complete filter label -->
   <string name="Search.complete">выполнено</string>
