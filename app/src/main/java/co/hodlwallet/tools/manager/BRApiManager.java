@@ -95,6 +95,7 @@ public class BRApiManager {
         Set<CurrencyEntity> set = new LinkedHashSet<>();
         try {
             JSONArray arr = fetchRates(context);
+            String grsInBTC = getGRSTicker(context);
             updateFeePerKb(context);
             if (arr != null) {
                 int length = arr.length();
@@ -105,6 +106,7 @@ public class BRApiManager {
                         tmp.name = tmpObj.getString("name");
                         tmp.code = tmpObj.getString("code");
                         tmp.rate = (float) tmpObj.getDouble("rate");
+                        tmp.rate = tmp.rate * (float)Double.parseDouble(grsInBTC);
                         String selectedISO = BRSharedPrefs.getIso(context);
 //                        Log.e(TAG,"selectedISO: " + selectedISO);
                         if (tmp.code.equalsIgnoreCase(selectedISO)) {
@@ -173,6 +175,11 @@ public class BRApiManager {
         }
     }
 
+    public static String getGRSTicker(Activity activity) {
+        String string = urlGET(activity,"https://www.groestlcoin.org/grsticker.php");
+
+        return string;
+    }
 
     public static JSONArray fetchRates(Activity activity) {
         String jsonString = BuildConfig.BITCOIN_TESTNET ? urlGET(activity, "https://" + HodlApp.HOST + "/hodl.staging/rates.json") :
@@ -203,6 +210,7 @@ public class BRApiManager {
     }
 
     public static void updateFeePerKb(Context app) {
+        /*
         String jsonString = urlGET(app, "https://" + HodlApp.HOST + "/hodl/fee-estimator.json");
         if (jsonString == null || jsonString.isEmpty()) {
             Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
@@ -245,6 +253,7 @@ public class BRApiManager {
         } catch (JSONException e) {
             Log.e(TAG, "updateFeePerKb: FAILED: " + jsonString, e);
         }
+         */
     }
 
     private static String urlGET(Context app, String myURL) {
