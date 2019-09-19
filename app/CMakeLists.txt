@@ -62,6 +62,11 @@ add_library( # Specifies the name of the library.
              src/main/jni/breadwallet-core/BRTransaction.h
              src/main/jni/breadwallet-core/BRWallet.c
              src/main/jni/breadwallet-core/BRWallet.h
+			 src/main/jni/breadwallet-core/hashblock.c
+			 src/main/jni/breadwallet-core/hashgroestl.h
+			 src/main/jni/breadwallet-core/groestl.c
+			 src/main/jni/breadwallet-core/sph_groestl.h
+			 src/main/jni/breadwallet-core/sph_types.h
 
              src/main/jni/transition/core.c
              src/main/jni/transition/core.h
