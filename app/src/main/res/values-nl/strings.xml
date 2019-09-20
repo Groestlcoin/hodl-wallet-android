@@ -321,7 +321,7 @@
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PIN Upgraden</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten van Brood te ontvangen.</string>
+  <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten van HODL GRS te ontvangen.</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">Push Meldingen</string>
   <!-- Push notifications are off label -->
@@ -713,7 +713,7 @@
   <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
   <string name="Welcome.body">HODLwallet is omgedoopt tot HODL, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.</string>
   <!-- Top title of welcome screen -->
-  <string name="Welcome.title">Welkom bij Brood!</string>
+  <string name="Welcome.title">Welkom bij HODL GRS!</string>
   <!-- Wipe wallet alert message -->
   <string name="WipeWallet.alertMessage">Weet je zeker dat je deze portomonnee wilt verwijderen?</string>
   <!-- Wipe wallet alert title -->
