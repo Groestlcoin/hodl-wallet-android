@@ -170,8 +170,8 @@
   <string name="FeeSelector.transactionFee">Transaction Fee</string>
   <!-- Estimated Confirmation Title-->
   <string name="FeeSelector.estConfirmation">Est. Confirmation</string>
-  <!-- E.g. [Amount] sat/byte -->
-  <string name="FeeSelector.satByte">%1$s sat/byte</string>
+  <!-- E.g. [Amount] gro/byte -->
+  <string name="FeeSelector.satByte">%1$s gro/byte</string>
   <!-- Normal title on fee slider -->
   <string name="FeeSelector.normal">Normal</string>
   <!-- High title on fee slider -->
@@ -181,9 +181,9 @@
   <!-- Custom Fee warning -->
   <string name="FeeSelector.customBody">Setting custom Fee is not recommended. If the Fee is too low, the transaction may never get confirmed.</string>
   <!-- Custom Fee error message -->
-  <string name="FeeSelector.customError">Fee is too high. Maximum fee is 1200 sat/byte.</string>
-  <!-- Custom Fee sat/byte hint -->
-  <string name="FeeSelector.customHint">sat/byte</string>
+  <string name="FeeSelector.customError">Fee is too high. Maximum fee is 1200 gro/byte.</string>
+  <!-- Custom Fee gro/byte hint -->
+  <string name="FeeSelector.customHint">gro/byte</string>
   <!-- Fee Selector title -->
   <string name="FeeSelector.title">Processing Speed</string>
   <!-- Checking private key balance progress view text -->
