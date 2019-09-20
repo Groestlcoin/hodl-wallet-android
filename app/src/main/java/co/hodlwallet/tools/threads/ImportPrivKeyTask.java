@@ -52,6 +52,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
     public static final String TAG = ImportPrivKeyTask.class.getName();
     public static String UTXO_URL;
     public static String TX_URL;
+    public static String UTXO_URL2;
     private Activity app;
     private String key;
     private ImportPrivKeyEntity importPrivKeyEntity;
@@ -59,8 +60,12 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
     public ImportPrivKeyTask(Activity activity) {
         app = activity;
 
-        UTXO_URL = BuildConfig.BITCOIN_TESTNET ? "https://blockstream.info/testnet/api/address/%s/utxo" : "https://blockstream.info/api/address/%s/utxo";
-        TX_URL = BuildConfig.BITCOIN_TESTNET ? "https://blockstream.info/testnet/api/tx/%s" : "https://blockstream.info/api/tx/%s";
+        UTXO_URL = BuildConfig.BITCOIN_TESTNET ? "https://chainz.cryptoid.info/grs-test/api.dws?q=unspent&key=d47da926b82e&active=%s" :
+                "https://chainz.cryptoid.info/grs/api.dws?q=unspent&key=d47da926b82e&active=%s";
+        TX_URL = BuildConfig.BITCOIN_TESTNET ?  "https://chainz.cryptoid.info/grs-test/api.dws?q=txinfo&key=d47da926b82e&t=%s" :
+                "https://chainz.cryptoid.info/grs-/api.dws?q=txinfo&key=d47da926b82e&t=%s";
+        UTXO_URL2 = BuildConfig.BITCOIN_TESTNET ? "http://groestlsight-test.groestlcoin.org/api/addr/%s/utxo" :
+                "http://groestlsight.groestlcoin.org/api/addr/%s/utxo";
     }
 
     @Override
@@ -75,6 +80,11 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
         String bech32Url = String.format(UTXO_URL, bech32Address);
 
         importPrivKeyEntity = createTx(legacyUrl, bech32Url);
+        if(importPrivKeyEntity == null) {
+            legacyUrl = String.format(UTXO_URL2, legacyAddress);
+            bech32Url = String.format(UTXO_URL2, bech32Address);
+            importPrivKeyEntity = createTx_groestlsight(legacyUrl, bech32Url);
+        }
         if (importPrivKeyEntity == null) {
             app.runOnUiThread(new Runnable() {
                 @Override
@@ -173,12 +183,73 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
             if (jsonString == null || jsonString.isEmpty()) return null;
 
             JSONArray jsonArray = null;
+            JSONObject jsonObject = null;
+            try {
+                jsonObject = new JSONObject(jsonString);
+                jsonArray = jsonObject.getJSONArray("unspent_outputs");//new JSONArray(jsonString);
+
+                int length = jsonArray.length();
+
+                for (int j = 0; j < length; j++) {
+                    JSONObject obj = jsonArray.getJSONObject(j);
+
+                    if (!inputArrayCreated) {
+                        BRWalletManager.getInstance().createInputArray();
+
+                        inputArrayCreated = true;
+                    }
+
+                    String txid = obj.getString("tx_hash");
+                    int vout = obj.getInt("tx_ouput_n");
+                    long value = obj.getLong("value");
+
+                    /*String txUrl = String.format(TX_URL, txid);
+
+                    if (txUrl == null || txUrl.isEmpty()) return null;
+                    String txJsonString = callURL(txUrl);
+                    if (txJsonString == null || txJsonString.isEmpty()) return null;
+
+                    JSONObject txJsonObject = new JSONObject(txJsonString);
+                    JSONArray vouts = txJsonObject.getJSONArray("vout");
+                    */
+
+                    String scriptPubKey = null;
+                    //if (vouts.length() >= (vout + 1)) {
+                    //    JSONObject voutItem = vouts.getJSONObject(vout);
+                        scriptPubKey = obj.getString("script");
+                    //}
+
+                    byte[] txidBytes = hexStringToByteArray(txid);
+                    byte[] scriptPubKeyBytes = hexStringToByteArray(scriptPubKey);
+
+                    BRWalletManager.getInstance().addInputToPrivKeyTx(txidBytes, vout, scriptPubKeyBytes, value);
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return BRWalletManager.getInstance().getPrivKeyObject();
+    }
+
+    public static ImportPrivKeyEntity createTx_groestlsight(String legacyUrl, String bech32Url) {
+        String[] urls = {legacyUrl, bech32Url};
+        boolean inputArrayCreated = false;
+
+        for (int i = 0; i <= 1; i++) {
+            String url = urls[i];
+
+            if (url == null || url.isEmpty()) return null;
+            String jsonString = callURL(url);
+            if (jsonString == null || jsonString.isEmpty()) return null;
+
+            JSONArray jsonArray = null;
             try {
                 jsonArray = new JSONArray(jsonString);
                 int length = jsonArray.length();
 
                 for (int j = 0; j < length; j++) {
-                    JSONObject obj = jsonArray.getJSONObject(i);
+                    JSONObject obj = jsonArray.getJSONObject(j);
                     JSONObject status = obj.getJSONObject("status");
 
                     boolean confirmed = status.getBoolean("confirmed");
@@ -194,7 +265,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
                     int vout = obj.getInt("vout");
                     long value = obj.getLong("value");
 
-                    String txUrl = String.format(TX_URL, txid);
+                    /*String txUrl = String.format(TX_URL, txid);
 
                     if (txUrl == null || txUrl.isEmpty()) return null;
                     String txJsonString = callURL(txUrl);
@@ -202,12 +273,13 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
                     JSONObject txJsonObject = new JSONObject(txJsonString);
                     JSONArray vouts = txJsonObject.getJSONArray("vout");
+                    */
 
                     String scriptPubKey = null;
-                    if (vouts.length() >= (vout + 1)) {
-                        JSONObject voutItem = vouts.getJSONObject(vout);
-                        scriptPubKey = voutItem.getString("scriptpubkey");
-                    }
+                    //if (vouts.length() >= (vout + 1)) {
+                    //    JSONObject voutItem = vouts.getJSONObject(vout);
+                    scriptPubKey = obj.getString("script");
+                    //}
                     byte[] txidBytes = hexStringToByteArray(txid);
                     byte[] scriptPubKeyBytes = hexStringToByteArray(scriptPubKey);
 
