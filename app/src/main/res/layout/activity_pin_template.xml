@@ -24,7 +24,8 @@
         app:layout_constraintRight_toLeftOf="@+id/faq_button"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        android:visibility="gone"/>
 
     <co.hodlwallet.presenter.customviews.BRText
         android:id="@+id/description"

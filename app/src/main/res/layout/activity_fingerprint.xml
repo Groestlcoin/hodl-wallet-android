@@ -37,7 +37,8 @@
                 android:text="@string/TouchIdSettings.title.android"
                 android:textColor="@color/white"
                 android:textSize="@dimen/header"
-                app:customTFont="Electrolize-Regular.ttf"/>
+                app:customTFont="Electrolize-Regular.ttf"
+                android:visibility="gone"/>
 
             <ImageButton
                 android:id="@+id/faq_button"
@@ -46,7 +47,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_margin="@dimen/bread_margin"
                 android:background="@drawable/ic_faq"
-                />
+                android:visibility="gone"/>
 
 
         </RelativeLayout>

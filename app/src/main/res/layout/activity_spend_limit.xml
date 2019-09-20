@@ -21,7 +21,8 @@
         app:customTFont="Electrolize-Regular.ttf"
         app:layout_constraintEnd_toStartOf="@+id/faq_button"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 
 
     <co.hodlwallet.presenter.customviews.BRText
