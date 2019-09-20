@@ -123,7 +123,7 @@ public class BRConstants {
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
-    public static boolean PLATFORM_ON = true;
+    public static boolean PLATFORM_ON = false;
     public static final RoundingMode ROUNDING_MODE = RoundingMode.HALF_EVEN;
     public static final boolean WAL = true;
 
