@@ -210,26 +210,25 @@ public class BRApiManager {
     }
 
     public static void updateFeePerKb(Context app) {
-        /*
-        String jsonString = urlGET(app, "https://" + HodlApp.HOST + "/hodl/fee-estimator.json");
-        if (jsonString == null || jsonString.isEmpty()) {
-            Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
-            return;
-        }
-        long highFee;
-        long fee;
-        long economyFee;
-        String highFeeTime;
-        String regularFeeTime;
-        String economyFeeTime;
+        //String jsonString = urlGET(app, "https://" + HodlApp.HOST + "/hodl/fee-estimator.json");
+        //if (jsonString == null || jsonString.isEmpty()) {
+        //    Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
+        //    return;
+        //}
+        long highFee = 20000;
+        long fee = 10000;
+        long economyFee = 5000;
+        String highFeeTime = "1";
+        String regularFeeTime = "3";
+        String economyFeeTime = "3";
         try {
-            JSONObject obj = new JSONObject(jsonString);
-            highFee = obj.getLong("fastest_sat_per_kilobyte");
-            fee = obj.getLong("normal_sat_per_kilobyte");
-            economyFee = obj.getLong("slow_sat_per_kilobyte");
-            highFeeTime = obj.getString("fastest_time_text");
-            regularFeeTime = obj.getString("normal_time_text");
-            economyFeeTime = obj.getString("slow_time_text");
+            //JSONObject obj = new JSONObject(jsonString);
+            //highFee = obj.getLong("fastest_sat_per_kilobyte");
+            //fee = obj.getLong("normal_sat_per_kilobyte");
+            //economyFee = obj.getLong("slow_sat_per_kilobyte");
+            //highFeeTime = obj.getString("fastest_time_text");
+            //regularFeeTime = obj.getString("normal_time_text");
+            //economyFeeTime = obj.getString("slow_time_text");
             if (highFee != 0 && highFee < BRWalletManager.getInstance().maxFee()) {
                 BRSharedPrefs.putHighFeePerKb(app, highFee);
             } else {
@@ -250,10 +249,9 @@ public class BRApiManager {
             BRSharedPrefs.putHighFeeTimeText(app, highFeeTime);
             BRSharedPrefs.putFeeTimeText(app, regularFeeTime);
             BRSharedPrefs.putEconomyFeeTimeText(app, economyFeeTime);
-        } catch (JSONException e) {
-            Log.e(TAG, "updateFeePerKb: FAILED: " + jsonString, e);
+        } catch (Exception e) {
+           Log.e(TAG, "updateFeePerKb: FAILED: ", e);
         }
-         */
     }
 
     private static String urlGET(Context app, String myURL) {
