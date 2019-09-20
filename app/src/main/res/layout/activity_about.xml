@@ -63,7 +63,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"/>
 
     <View
         android:id="@+id/view5"
@@ -77,7 +78,8 @@
         android:layout_marginRight="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"/>
 
     <co.hodlwallet.presenter.customviews.BRText
         app:customTFont="Electrolize-Regular.ttf"
@@ -89,7 +91,8 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/view4"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1"
+        android:visibility="gone"/>
 
     <co.hodlwallet.presenter.customviews.BRText
         app:customTFont="Electrolize-Regular.ttf"
@@ -102,7 +105,8 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/view5"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/twitter_share_button"
@@ -111,7 +115,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         app:layout_constraintRight_toRightOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/textView22"
-        android:src="@drawable/ic_share"/>
+        android:src="@drawable/ic_share"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/blog_share_button"
@@ -123,7 +128,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView24"
         app:layout_constraintRight_toRightOf="@+id/view5"
         app:layout_constraintTop_toTopOf="@+id/textView24"
-        android:src="@drawable/ic_share"/>
+        android:src="@drawable/ic_share"
+        android:visibility="gone"/>
 
     <co.hodlwallet.presenter.customviews.BRText
         app:customTFont="Electrolize-Regular.ttf"
@@ -170,7 +176,8 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/divider1"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/reddit_share_button"
@@ -179,6 +186,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintRight_toRightOf="@+id/divider1"
         app:layout_constraintTop_toTopOf="@+id/textView21"
-        android:src="@drawable/ic_share"/>
+        android:src="@drawable/ic_share"
+        android:visibility="gone"/>
 
 </android.support.constraint.ConstraintLayout>
