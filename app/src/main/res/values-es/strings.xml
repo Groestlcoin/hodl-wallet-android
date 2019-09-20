@@ -733,9 +733,9 @@
   <!-- Top title of welcome screen -->
   <string name="Welcome.title">¡Bienvenido a HODL!</string>
   <!-- Top title of segwit popup -->
-  <string name="Segwit.title">HODL Wallet se ha Actualizado!</string>
+  <string name="Segwit.title">HODL GRS Wallet se ha Actualizado!</string>
   <!-- Message of segwit popup -->
-  <string name="Segwit.message">HODL Wallet se ha actualizado al estándar de dirección de Groestlcoin más reciente. Esto te brinda el beneficio adicional de ahorrar en las tarifas de transacción y ser compatible con los últimos estándares de la Red Groestlcoin. No tienes que hacer nada diferente y lo único que notarás es que tus direcciones han cambiado y ahora comienzan con \"grs\".\n\nTu dinero está seguro y aún se almacena en tu Clave de Recuperación.\n\nDado que este cambio aún está teniendo efecto en la Red Groestlcoin, es posible que algunos servicios no estén listos para enviar a este nuevo tipo de dirección. Si te encuentras con esto, aún puedes acceder a las direcciones antiguas que comienzan con \"1\" a través de: Configuración / Cartera / Mostrar direcciones antiguas.\n\nLegacy address: Dirección antigua</string>
+  <string name="Segwit.message">HODL GRS Wallet se ha actualizado al estándar de dirección de Groestlcoin más reciente. Esto te brinda el beneficio adicional de ahorrar en las tarifas de transacción y ser compatible con los últimos estándares de la Red Groestlcoin. No tienes que hacer nada diferente y lo único que notarás es que tus direcciones han cambiado y ahora comienzan con \"grs\".\n\nTu dinero está seguro y aún se almacena en tu Clave de Recuperación.\n\nDado que este cambio aún está teniendo efecto en la Red Groestlcoin, es posible que algunos servicios no estén listos para enviar a este nuevo tipo de dirección. Si te encuentras con esto, aún puedes acceder a las direcciones antiguas que comienzan con \"1\" a través de: Configuración / Cartera / Mostrar direcciones antiguas.\n\nLegacy address: Dirección antigua</string>
   <!-- Wipe wallet alert message -->
   <string name="WipeWallet.alertMessage">¿Seguro que quieres eliminar esta cartera?</string>
   <!-- Wipe wallet alert title -->

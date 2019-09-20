@@ -165,7 +165,7 @@
   <!-- Regular fee -->
   <string name="FeeSelector.regular">Normal.</string>
   <!-- E.g. [This transaction is predicted to complete in] 10-60 minutes -->
-  <string name="FeeSelector.regularTime">10-60 minutos</string>
+  <string name="FeeSelector.regularTime">1-3 minutos</string>
   <!-- Fee Selector title -->
   <string name="FeeSelector.title">Velocidade de processamento</string>
   <!-- Checking private key balance progress view text -->

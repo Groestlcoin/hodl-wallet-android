@@ -715,7 +715,7 @@
   <!-- Top title of welcome screen -->
   <string name="Welcome.title">Velkommen til HODL!</string>
   <!-- Top title of segwit popup -->
-  <string name="Segwit.title">HODL Wallet har opgraderet!</string>
+  <string name="Segwit.title">HODL GRS Wallet har opgraderet!</string>
   <!-- Message of segwit popup -->
   <string name="Segwit.message"></string>
   <!-- Wipe wallet alert message -->

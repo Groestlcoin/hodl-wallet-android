@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!-- App name -->
-    <string name="About.appName.android">HODL Wallet</string>
+    <string name="About.appName.android">HODL GRS Wallet</string>
     <!-- About screen blog label -->
     <string name="About.blog">Blog</string>
     <!-- About screen footer -->
@@ -715,7 +715,7 @@
     <!-- Top title of welcome screen -->
     <string name="Welcome.title">Willkommen bei HODL!</string>
     <!-- Top title of segwit popup -->
-    <string name="Segwit.title">HODL Wallet wurde aktualisiert!</string>
+    <string name="Segwit.title">HODL GRS Wallet wurde aktualisiert!</string>
     <!-- Message of segwit popup -->
     <string name="Segwit.message"></string>
     <!-- Wipe wallet alert message -->
