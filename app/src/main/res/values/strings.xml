@@ -393,7 +393,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Sync with Blockchain?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 minutes</string>
+  <string name="ReScan.body1">2-45 minutes</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">If a transaction shows as completed on the Groestlcoin network but not in your wallet.</string>
   <!-- Syncing explanation -->

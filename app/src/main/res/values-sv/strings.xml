@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">Blogg</string>
   <!-- About screen footer -->
-  <string name="About.footer">Skapad av det lokala teamet för HODL. Version %1$s</string>
+  <string name="About.footer">Skapad av det lokala teamet för HODL\nHash Engineering Solutions.\n Version %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Sekretesspolicy</string>
   <!-- About screen reddit label -->
@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Synka med blockkedja?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 minuter</string>
+  <string name="ReScan.body1">2-45 minuter</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">Om en transaktion visar sig som klar i Groestlcoins nätverk men inte i HODL.</string>
   <!-- Syncing explanation -->

@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">Блог</string>
   <!-- About screen footer -->
-  <string name="About.footer">Создано международной командой HODL. Версия %1$s</string>
+  <string name="About.footer">Создано международной командой HODL\nHash Engineering Solutions.\n Версия %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Политика конфиденциальности</string>
   <!-- About screen reddit label -->
@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Синхронизировать с Blockchain?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 минут</string>
+  <string name="ReScan.body1">2-45 минут</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">Если транзакция описывается как \"выполненная\" в биткойн-сети, но не в вашем HODL-кошельке.</string>
   <!-- Syncing explanation -->

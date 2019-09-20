@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">블로그</string>
   <!-- About screen footer -->
-  <string name="About.footer">글로벌 HODL 팀 제작. 버전 %1$s</string>
+  <string name="About.footer">글로벌 HODL + Hash Engineering Solutions 팀 제작. 버전 %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">개인정보 보호정책</string>
   <!-- About screen reddit label -->
@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">블록체인과 동기화하겠습니까?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45분</string>
+  <string name="ReScan.body1">2-45분</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">거래가 비트코인 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.</string>
   <!-- Syncing explanation -->

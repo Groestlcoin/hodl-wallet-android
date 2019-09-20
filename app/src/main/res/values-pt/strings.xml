@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">Blog</string>
   <!-- About screen footer -->
-  <string name="About.footer">Criada pela equipa HODL global. Versão %1$s</string>
+  <string name="About.footer">Criada pela equipa HODL global\nHash Engineering Solutions.\n Versão %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Política de Privacidade</string>
   <!-- About screen reddit label -->
@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Sincronizar com a Blockchain?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 minutos</string>
+  <string name="ReScan.body1">2-45 minutos</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">Se uma transação aparece como concluída na sua rede Groestlcoin mas não na sua HODL.</string>
   <!-- Syncing explanation -->

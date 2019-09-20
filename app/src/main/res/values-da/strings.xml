@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">Blog</string>
   <!-- About screen footer -->
-  <string name="About.footer">Lavet af det globale HODL hold. Version %1$s</string>
+  <string name="About.footer">Lavet af det globale HODL hold\nHash Engineering Solutions.\nVersion %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Privatlivspolitik</string>
   <!-- About screen reddit label -->
@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Synkroniser med blokkæde?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 minutter</string>
+  <string name="ReScan.body1">2-45 minutter</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">Hvis en transaktion vises som gennemført i Groestlcoin netværket, men ikke i dit HODL.</string>
   <!-- Syncing explanation -->

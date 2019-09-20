@@ -377,7 +377,7 @@
   <!-- Alert message title -->
   <string name="ReScan.alertTitle">Synchroniser avec la chaîne de bloc ?</string>
   <!-- extimated time -->
-  <string name="ReScan.body1">20-45 minutes</string>
+  <string name="ReScan.body1">2-45 minutes</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body2">Si une transaction apparaît comme achevée sur le réseau de Groestlcoin mais pas dans votre HODL.</string>
   <!-- Syncing explanation -->
