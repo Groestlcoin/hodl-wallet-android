@@ -108,7 +108,8 @@
             android:layout_margin="@dimen/bread_margin"
             android:background="@drawable/ic_faq"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="81dp"/>
+            tools:layout_editor_absoluteY="81dp"
+            android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/imageView9"

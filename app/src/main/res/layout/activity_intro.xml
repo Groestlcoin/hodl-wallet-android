@@ -83,6 +83,7 @@
         android:background="@drawable/ic_faq"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
         />
 
     <View

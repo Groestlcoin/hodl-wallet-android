@@ -113,7 +113,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="15dp"
             android:background="@drawable/ic_faq"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
 
         <ImageButton
             android:id="@+id/close_button"

@@ -60,6 +60,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/title"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/title"
-        android:background="@drawable/ic_faq"/>
+        android:background="@drawable/ic_faq"
+        android:visibility="gone"/>
 
 </android.support.constraint.ConstraintLayout>
