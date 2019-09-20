@@ -70,7 +70,8 @@
                 android:layout_marginRight="@dimen/bread_margin"
                 android:background="@drawable/ic_faq"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="81dp"/>
+                tools:layout_editor_absoluteY="81dp"
+                android:visibility="gone"/>
 
 
         </RelativeLayout>
@@ -247,7 +248,6 @@
         </android.support.constraint.ConstraintLayout>
 
         <co.hodlwallet.presenter.customviews.BRLinearLayoutWithCaret
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/fee_buttons_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -287,14 +287,11 @@
                     android:id="@+id/fee_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:textSize="@dimen/sub_header"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
                     android:text="@string/FeeSelector.transactionFee"
                     android:textColor="@color/white"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    />
+                    android:textSize="@dimen/sub_header"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
 
                 <co.hodlwallet.presenter.customviews.BRText
                     android:id="@+id/confirm_title"
