@@ -123,9 +123,9 @@ public class BRCurrency {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
                     case CURRENT_UNIT_SATOSHI:
-                        return "SAT";
+                        return "GRO";
                     case BRConstants.CURRENT_UNIT_BITCOINS:
-                        return "BTC";
+                        return "GRS";
                 }
             }
         }

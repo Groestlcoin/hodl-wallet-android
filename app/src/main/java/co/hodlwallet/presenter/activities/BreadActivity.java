@@ -499,7 +499,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                     public void run() {
                         primaryPrice.setText(formattedBTCAmount);
                         secondaryPrice.setText(String.format("%s", formattedCurAmount));
-                        btcPrice.setText(String.format("1 BTC = %s", formattedBTCPrice));
+                        btcPrice.setText(String.format("1 GRS = %s", formattedBTCPrice));
                     }
                 });
                 TxManager.getInstance().updateTxList(BreadActivity.this);
