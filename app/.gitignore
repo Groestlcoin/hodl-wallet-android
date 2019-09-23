@@ -2,3 +2,5 @@
 Todos
 /exp.gradle
 /.externalNativeBuild/
+/src/main/res/mipmap-*/*.png
+/src/testnet/res/mipmap-*/*.png
