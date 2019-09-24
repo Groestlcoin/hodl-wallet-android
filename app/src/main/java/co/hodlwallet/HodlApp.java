@@ -106,7 +106,9 @@ public class HodlApp extends Application {
 //            }
 //        });
 
-        createNotificationChannels();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            createNotificationChannels();
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.O)
