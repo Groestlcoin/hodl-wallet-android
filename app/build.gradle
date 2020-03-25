@@ -9,8 +9,8 @@ android {
         applicationId = 'org.groestlcoin.hodlwallet'
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 114
-        versionName "3.3.4"
+        versionCode 115
+        versionName "3.3.5"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,
